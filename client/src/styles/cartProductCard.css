@@ -1,0 +1,114 @@
+
+.cartProductCardLink{
+    display: block;
+    padding: 10px 10px;
+    margin: 10px 0px;
+    box-shadow: 0 0 15px 0px rgb(153 153 153 / 12%);
+
+}
+.cartProductCard {
+    flex-direction: row;
+    padding: 10px 18px;
+    border-radius: 0px;
+    border: none;
+}
+.cartProductCard .actualPrice{
+    text-decoration: line-through;
+}
+.cartProductCard img {
+    width: 176px;
+    object-fit: cover;
+    height: 230px;
+    object-position: center;
+}
+.cartProductCard .card-body {
+    padding: 0px 10px;
+    padding-left: 34px;
+}
+.cartProductCard .qty i {
+    padding: 3px;
+    border-radius: 100%;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+}
+.cartProductCard .qty div {
+    border: 1px solid #2827274d;
+    padding: 0px 10px;
+    margin: 0px 6px;
+}
+.cartProductCardLink .btn{
+    border-radius: 0px;
+}
+.productSummaryBox{
+    box-shadow:0 0 15px 0px rgb(153 153 153 / 12%);
+    padding: 15px 32px;
+    width: 27%;
+    margin: 10px 0px;
+}
+.productSummaryBox .subHeading{
+    border-bottom: 1px dashed #00000036;
+    padding-bottom: 8px;
+    margin-bottom: 13px;
+}
+.productSummaryBox .total{
+    padding: 14px 0px;
+    font-weight: 700;
+    border-top: 1px dashed #000000ab;
+}
+
+#cart .itemsBox{
+    width: 70%;
+}
+#cart .checkoutBtn{
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px;
+}
+
+@media (max-width:992px) {
+    .productSummaryBox{
+        width: 34%;
+    }
+    #cart .itemsBox{
+        width: 64%;
+    }
+}
+@media (max-width:769px) {
+    #cart .fc{
+        flex-direction: column;
+    }
+    .productSummaryBox{
+        width: 100%;
+    }
+    #cart .itemsBox{
+        width: 100%;
+    }
+}
+
+@media (max-width:500px) {
+    .cartProductCard img {
+        height: 150px;
+        width: 107px;
+    }
+    .cartProductCard .card-body {
+        padding: 0px 7px;
+        padding-left: 10px;
+    }
+}
+@media (max-width:360px) {
+    .cartProductCardLink{
+        font-size: 12px;
+    }
+    .cartProductCard img {
+        height: 112px;
+        width: 76px;
+    }
+    
+}

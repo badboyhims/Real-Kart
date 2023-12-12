@@ -1,0 +1,16 @@
+#footer .copyright{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0px;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: -50px;
+}
+@media (max-width:400px) {
+    #footer .copyright{
+        font-size: 12px;
+    }
+}

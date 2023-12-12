@@ -1,0 +1,171 @@
+#productPage{
+    margin: 20px 0px;
+}
+#productPage .left{
+    width: 50%;
+    padding: 8px 35px;
+}
+#productPage .right{
+    width: 50%;
+    padding: 8px 10px;
+}
+#productPage .left .buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+#productPage .left .btn{
+    width: 49%;
+}
+#productPage .left img{
+    max-height: 550px;
+    object-fit: cover;
+    width: 100%;
+
+}
+
+
+#productPage .ratingButton{
+    color: white;
+    padding: 0px 11px;
+    font-size: 11px;
+    margin-right: 5px;
+    border-radius: 15px;
+    height: 25px;
+    width: 50px;
+}
+
+#productPage .right .actualPrice{
+    margin: 0px 15px;
+    text-decoration: line-through;
+}
+
+#productPage .description {
+    text-align: justify;
+    line-height: 26px;
+    font-size: 14px;
+}
+
+#productPage input,#productPage textarea {
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid black;
+    padding: 0px 6px;
+}
+#productPage input:active,#productPage input:focus,#productPage textarea:active,#productPage textarea:focus{
+    outline: none;
+}
+#productPage .checkPincode .btn{
+    background: gray;
+        color: white;
+}
+
+.submitRating {
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px 0px;
+    padding: 29px 19px;
+    box-shadow: 0 0 15px 0px rgb(153 153 153 / 80%);
+}
+
+.submitRating textarea{
+    margin: 10px 0px;
+    height: 84px;
+}
+.submitRating .stars{
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.submitRating .stars svg {
+    font-size: 23px;
+    margin: 0px 3px;
+}
+
+
+#productPage .rateProduct{
+    color: white;
+    cursor: pointer;
+    background: var(--basic);
+}
+.colorsBox{
+    margin-top: 25px;
+}
+.colorsBox img{
+    height: 78px;
+    width: 66px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.sizeBox .btn{
+    border: 2px solid black;
+}
+#productPage .active{
+    border: 2px solid var(--basic);
+    cursor:not-allowed;
+}
+.hr{
+    width: 100%;
+    height: 1px;
+    background-color: gray;
+    margin: 30px 0px;
+}
+
+.reviews {
+    padding: 32px 31px;
+
+}
+.reviews .profilePicture{
+    background: #747470;
+    height: 44px;
+    min-width: 44px;
+    max-width: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    color: white;
+    font-size: 26px;
+    margin-right: 22px;
+}
+.reviews .comment{
+    width: 77%;
+}
+
+
+
+@media (max-width:769px) {
+    #productPage .left {
+        width: 100%;
+    }
+    #productPage .right {
+        width: 100%;
+        margin-top: 20px;
+        padding: 0px;
+    }
+    #productPage .mainContainer{
+        flex-direction: column;
+    }
+    .reviews .comment {
+        width: 100%;
+    }
+}
+@media (max-width:400px) {
+    .reviews {
+        padding: 24px 14px;
+        font-size: 12px;
+    }
+    #productPage .ratingButton {
+        font-size: 9px;
+    }
+    #productPage .left {
+        padding: 0px;
+    }
+    
+    #productPage .ratingButton {
+        max-height: 25px;
+    }
+    .reviews{
+        box-shadow: none;
+        padding:0;
+    }
+}

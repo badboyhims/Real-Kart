@@ -1,0 +1,141 @@
+
+.orders .box{
+    box-shadow: 0 0 15px 0px rgb(206 206 206 / 32%);
+    padding: 17px 33px;
+    margin: 20px 0px;
+
+}
+.orders .boxUser{
+    box-shadow: 0 0 15px 0px rgb(206 206 206 / 32%);
+}
+
+.orders .userInfo{
+    color: #3e3a3a;
+    font-family: auto;
+}
+.orders .desc{
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 14px;
+}
+.orders .brand{
+    font-size: 15px;
+    font-weight: 600;
+}
+.orders .totalPrice{
+    font-weight: 700;
+    color: green;
+}
+.orders .date{
+    margin-bottom: 14px;
+    color: var(--basic2);
+    text-align: right;
+}
+.orders .qty{
+    color: #c90202;
+}
+.orders .descUser .qty{
+    position: absolute;
+    background: green;
+    height: 15px;
+    width: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    font-weight: 700;
+    color: white;
+    top: 0px;
+    font-size: 11px;
+}
+.orders .orderDate{
+    margin-bottom: 20px;
+    text-align: right;
+    color: #c90202;
+    font-weight: 600;
+    font-family: auto;
+}
+.orders .orderDateUser{
+    text-align: left;
+    padding: 14px 40px;
+    background: #9a9898;
+    font-family: auto;
+    font-weight: 700;
+    color: white;
+}
+.orders .totalPriceUser{
+    text-align: left;
+    padding: 14px 40px;
+    color: green;
+    font-family: auto;
+    font-weight: 700;
+}
+
+.orders .descUser{
+    display: flex;
+    align-items: start;
+    padding: 10px 0px;
+    border-top: 1px solid #e7e7e780;
+}
+.orders .bigBox{
+    width: 70%;
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+}
+.orders .smallBox{
+    width: 30%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    position: relative;
+}
+.orders .boxUser img{
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    margin-right: 23px;
+}
+.accordion button{
+    background: #4999fb;
+    color: white;
+}
+.accordion-button:not(.collapsed) {
+    color: white;
+    background-color: #4999fb;;
+    box-shadow: none;
+}
+.accordion-button:focus {
+    border-color: none;
+    outline: 0;
+    box-shadow: none;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: none;
+}
+.accordion-button::after {
+    background-image: none;
+}
+
+@media (max-width:600px) {
+    .orders .bigBox{
+        flex-direction: column;
+    }
+}
+@media (max-width:350px){
+    .orders{
+        font-size: 12px;
+    }
+    .orders .orderDateUser{
+        padding: 14px 20px;
+    }
+    .orders .totalPriceUser{
+        padding: 14px 20px;
+    }
+}
+@media (max-width:500px) {
+    .orders .desc{
+        flex-direction: column;
+    }
+    
+}

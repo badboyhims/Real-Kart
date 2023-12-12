@@ -1,0 +1,16 @@
+.addFilterButton {
+    width: 100%;
+    background: gray;
+    text-align: center;
+    padding: 10px 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+#filterButton{
+    background: gray;
+    color: white;
+}

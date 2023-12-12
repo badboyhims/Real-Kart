@@ -1,0 +1,68 @@
+.account{
+    display: flex;
+    justify-content: center;
+    padding: 54px 10px;
+}
+.accountCard{
+    
+    box-shadow: 0 0 15px 0px rgba(153, 153, 153, 0.462);
+    background: whitesmoke;
+    padding: 42px 58px;
+    border-radius: 10px;
+
+}
+.account .box{
+    margin: 21px 0px;
+}
+.account .inputBox{
+    position: relative;
+}
+.account .leftIcon{
+    position: absolute;
+    left: 14px;
+    font-size: 21px;
+    top: 6px;
+    color: gray;
+}
+.account .rightIcon{
+    position: absolute;
+    right: 14px;
+    font-size: 21px;
+    top: 6px;
+    color: gray;
+    cursor: pointer;
+}
+.account .inputBox input{
+    width: 358px;
+    height: 50px;
+    padding-left: 40px;
+}
+.account .google{
+    width: 100%;
+    justify-content: center;
+    height: 48px;
+    align-items: center;
+    cursor: pointer;
+}
+.account .google svg{
+    margin-right: 4px;
+    font-size: 22px;
+}
+
+
+@media (max-width:600px) {
+    .accountCard{
+        width: 100%;
+    }
+    .account .inputBox input{
+        width: 100%;
+    }
+}
+@media (max-width:400px) {
+    .account{
+        padding: 10px;
+    }
+    .accountCard{
+        padding: 10px 15px
+    }
+}

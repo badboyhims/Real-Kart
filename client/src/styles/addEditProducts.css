@@ -1,0 +1,75 @@
+.form{
+    padding: 40px 0px;
+}
+.form .inputBox{
+    width: 48%;
+    flex-direction: column;
+    margin: 15px 0px;
+}
+.form .inputBox i{
+   color: red;
+}
+
+.form #smallInputs{
+    width: 100%;
+}
+.form #smallInputs  .inputBox{
+    width: 32%;
+}
+.form input,.form select{
+    width: 100%;
+    flex-direction: column;
+    margin-top: 6px;
+    height: 52px;
+    padding: 14px 16px;
+
+}
+.form textarea{
+    width: 100%;
+    margin: 10px 0px;
+    padding: 14px 19px;
+    height: 130px;
+}
+.form .checkBox{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.form .checkParentBox{
+   min-width: 50%;
+}
+.form .checkBox input{
+    width: 20px;
+}
+.form .btn{
+    background-color: var(--basic);
+    color: white;
+    width: 100%;
+}
+.form input[name='img']{
+   width:100%;
+   padding:0px;
+   height: auto;
+}
+
+
+
+@media (max-width:600px) {
+    .form{
+        font-size: 12px;
+    }    
+    .form .checkParentBox{
+        min-width: 100%;
+     }
+     .form .inputBox{
+        width: 100%;    
+    }
+}
+@media (max-width:400px) {
+    .form #smallInputs{
+    flex-direction: column;
+   }
+   .form #smallInputs .inputBox {
+    width: 100%;
+}
+}
